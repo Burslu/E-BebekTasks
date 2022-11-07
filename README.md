@@ -1,6 +1,6 @@
 # E-BebekTasks
 
-[Patika Dev Profilim](https://app.patika.dev/burslu)
+[PATIKA.DEV.PROFILIM](https://app.patika.dev/burslu)
 
 - [Kullanici girisi proje linki](https://github.com/Burslu/E-BebekTasks/blob/main/src/PatikaCohorts/KullaniciGirisi.java)
 - [VucudKitleEndeksiHesaplama_Linki](https://github.com/Burslu/E-BebekTasks/blob/main/src/PatikaCohorts/VucudKitleEndeksiHesaplama.java)
