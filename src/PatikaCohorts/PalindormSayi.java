@@ -1,19 +1,19 @@
 package PatikaCohorts;
 
-public class PalindromSayi {
+public class PalindormSayi {
     static boolean isPalindrom(int number){
         int temp = number , reverseNumber = 0 , lastNumber;
 
         while (temp!=0){
-        System.out.println("Number:" + number);
+            System.out.println("Number:" + number);
 
-        lastNumber =temp % 10 ;
-        System.out.println("Son Basamak:" +lastNumber);
+            lastNumber =temp % 10 ;
+            System.out.println("Son Basamak:" +lastNumber);
 
-        reverseNumber = (reverseNumber * 10)+lastNumber;
-        System.out.println("Yeni sayi:" + reverseNumber);
+            reverseNumber = (reverseNumber * 10)+lastNumber;
+            System.out.println("Yeni sayi:" + reverseNumber);
 
-        temp /= 10 ;
+            temp /= 10 ;
         }
         return true;
     }
@@ -24,3 +24,4 @@ public class PalindromSayi {
         //74*10= 740 + 2 = 742
     }
 }
+
