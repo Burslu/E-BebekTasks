@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class UcVeDordeTamBolunenProgram {
     public static void main(String[] args) {
-        int number ,average , counter = 0;//degisken isimlerim sayi , ortalma ,sayac
-        int total=0;
+        int number ,average , counter = 0, total=0;//degisken isimlerim sayi , ortalma ,sayac
+
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter your number:");
         number = scan.nextInt();
