@@ -8,7 +8,7 @@ public class DeseneGoreMetod {
         System.out.print("Sayi gir : ");
         int k = input.nextInt();
 
-//        pattern(x,x, 0);
+
         DeseneGoreMetod(k,k, 0);
     }
     static void DeseneGoreMetod(int number, int temp, int t){
