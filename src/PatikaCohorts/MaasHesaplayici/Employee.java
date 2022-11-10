@@ -1,4 +1,4 @@
-package PatikaCohorts.E_Bebek;
+package PatikaCohorts.MaasHesaplayici;
 
 public class Employee {
     // isim maas calisma saati calistigi yil sayisi adi altinda degiskenlerimiz tanimladik.

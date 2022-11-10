@@ -1,4 +1,4 @@
-package PatikaCohorts.E_Bebek;
+package PatikaCohorts.MaasHesaplayici;
 
 public class MainRunner {// runnner clasimiz
     public static void main(String[] args) {
