@@ -4,32 +4,37 @@ import java.util.Arrays;
 
 public class DizidekiElemanlarinFrekansi {
     public static void main(String[] args) {
-        int arry [] = {55, 64, 64, 12, 64, 55, 32, 10, 32, 5, 32};//dizi olusturuldu.
-        int[] frequancy = new int[arry.length];// yeni arry olusturmak ve yeni arry ile uzunlugunu ayni hale getirildi.
 
-        for (int i = 0; i < arry.length; i++)//for dongusu ile dizi uzunlugu donulup frekans degeri yazdirildi
-            frequancy[i] = 1;
-        for (int i = 0; i < arry.length; i++) {
-            for (int j = 0; j < arry.length; j++) {
-                if ((i != j) && (arry[i] == arry[j])) {
-                    frequancy[i]++;
+        /*
+        *
+        * Bu cozumde array ilk once sort edilip her eleman kendisinden sonraki elemanla karsilastirilir ve esitlik durumunda freq degiskeni 1 artirilir. Elemanlar farkli ciktigi anda
+        * yeni sayiyi saymaya basladigimizdan dolayi saydigimiz sayi yazdirilip freq degerimiz tekrardan 1 e set edilir.
+        *
+        */
+
+
+        int arry[] = {55, 64, 64, 12, 64, 55, 32, 10, 32, 5, 32,65};//dizi olusturuldu.
+        Arrays.sort(arry);
+        int freq = 1;
+        for (int i=0;i < arry.length; i++ ){
+
+            if(i == arry.length-1 ){// dizinin son elemanini bulmak icin kullandigimiz blok.
+                if (freq != 1){// son elemandan birden fazla olmasi durumunda calisacak blok
+                    System.out.println(arry[i] + " sayisi " + freq + " kere tekrar edildi.");
+                }
+            }else{
+                if(arry[i] == arry[i+1]){
+                    freq++;
+                }
+                else{
+                    if (freq != 1){
+                        System.out.println(arry[i] + " sayisi " + freq + " kere tekrar edildi.");
+                        freq = 1;//freq degiskeni her yazdirma isleminden sonra 1 e set edilir. ve diger sayi sayilmaya baslar.
+                    }
                 }
             }
-        }
-        for (int i = 0; i < arry.length; i++) {
-            for (int j = 0; j < arry.length; j++) {
-                if ((i != j) && (arry[i] == arry[j])) {
-                    arry[j] = 0;
-                }
-            }
-        }
-        System.out.println(Arrays.toString(arry));//array duzenlenerek yazdirildi
-        for (int i = 0; i < arry.length; i++) {//array dongu sokularak uzunlugundna kucuk olana kadar frekans degeri 1 den buyuk ise ve
-            // arry i degeri 0 a esit degil ise sayinin tekrar edecegi bilindiginden dolayiislem yaptirildi.
-            if (frequancy[i] > 1) {
-                if (arry[i] != 0)
-                    System.out.println(arry[i] + " sayisi " + frequancy[i] + " kere tekrar edildi.");
-            }
+
+
         }
 
     }
